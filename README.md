@@ -1,5 +1,7 @@
 # access-control-01
 
+[![CI](https://github.com/datto95/tetrade-execution-lab-access-control-01/actions/workflows/ci.yml/badge.svg)](https://github.com/datto95/tetrade-execution-lab-access-control-01/actions/workflows/ci.yml)
+
 Didactic proof of concept for the Tétrade execution lab.
 
 This lab demonstrates an access-control failure where a missing owner check allows an unauthorized caller to sweep treasury funds.
@@ -28,6 +30,17 @@ This lab demonstrates an access-control failure where a missing owner check allo
 ```bash
 forge build
 forge test -vvv
+python3 scripts/generate_evidence.py
+python3 scripts/generate_evidence.py --validate-only evidence/evidence.json
+```
+
+## Useful commands
+
+```bash
+make build
+make test
+make evidence
+make validate
 ```
 
 ## Expected test signals
@@ -35,6 +48,11 @@ forge test -vvv
 - Unauthorized sweep drains the vulnerable treasury.
 - Unauthorized sweep is rejected by the fixed treasury.
 - Empty-treasury negative control does not produce a false positive.
+
+## Notes
+
+- This is a didactic access-control pattern inspired by common treasury compromise incidents.
+- It is not a reproduction of any specific real-world protocol internals.
 
 ## Notes
 
