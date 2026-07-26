@@ -1,0 +1,10 @@
+out/
+cache/
+broadcast/
+coverage/
+lib/
+*.log
+.env
+.venv/
+evidence/evidence.json
+evidence/last-forge-test-output.log
