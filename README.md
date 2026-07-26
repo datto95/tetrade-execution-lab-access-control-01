@@ -39,6 +39,7 @@ python3 scripts/generate_evidence.py --validate-only evidence/evidence.json
 ```bash
 make build
 make test
+make gas-report
 make evidence
 make validate
 ```
@@ -48,11 +49,6 @@ make validate
 - Unauthorized sweep drains the vulnerable treasury.
 - Unauthorized sweep is rejected by the fixed treasury.
 - Empty-treasury negative control does not produce a false positive.
-
-## Notes
-
-- This is a didactic access-control pattern inspired by common treasury compromise incidents.
-- It is not a reproduction of any specific real-world protocol internals.
 
 ## Notes
 

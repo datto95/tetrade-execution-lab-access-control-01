@@ -20,6 +20,9 @@ Entregas:
 - Fuzz em limites de deposito/saque.
 - Relatorio de gas para comparar treasury vulneravel e corrigido.
 
+Status atual:
+- A fase 2 esta em andamento apos a consolidacao inicial.
+
 ## Fase 3 - Pacote didatico
 
 Objetivo:
