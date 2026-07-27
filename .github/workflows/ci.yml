@@ -34,39 +34,12 @@ jobs:
 
       - name: Validate evidence
         run: python3 scripts/generate_evidence.py --validate-only evidence/evidence.json
-name: CI
 
-on:
-  push:
-    branches: [main]
-  pull_request:
-    branches: [main]
+      - name: Generate gas report
+        run: make gas-report
 
-jobs:
-  build-test-evidence:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - name: Upload gas report artifact
+        uses: actions/upload-artifact@v4
         with:
-          submodules: recursive
-
-      - name: Set up Foundry
-        uses: foundry-rs/foundry-toolchain@v1
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Build contracts
-        run: forge build
-
-      - name: Run tests
-        run: forge test -vvv
-
-      - name: Generate evidence
-        run: python3 scripts/generate_evidence.py
-
-      - name: Validate evidence
-        run: python3 scripts/generate_evidence.py --validate-only evidence/evidence.json
+          name: gas-report
+          path: evidence/gas-report.txt
