@@ -20,6 +20,13 @@ This lab demonstrates an access-control failure where a missing owner check allo
 - `src/FixedTreasury.sol`: corrected treasury with `onlyOwner` protection.
 - `test/AccessControlExploit.t.sol`: exploit, fix, and negative-control tests.
 
+## Didactic docs
+
+- `docs/GUIA_ALUNO.md`
+- `docs/GUIA_INSTRUTOR.md`
+- `docs/CHECKLIST_AUDITORIA.md`
+- `docs/ROTEIRO.md`
+
 ## Prerequisites
 
 - Foundry installed and available in `PATH` (`forge`, `cast`, `anvil`)
