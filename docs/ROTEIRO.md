@@ -10,6 +10,9 @@ Entregas:
 - README com comandos reproduciveis.
 - Evidencia estruturada em JSON.
 
+Status:
+- Concluida.
+
 ## Fase 2 - Fortalecimento
 
 Objetivo:
@@ -21,7 +24,7 @@ Entregas:
 - Relatorio de gas para comparar treasury vulneravel e corrigido.
 
 Status atual:
-- A fase 2 esta em andamento apos a consolidacao inicial.
+- Concluida.
 
 ## Fase 3 - Pacote didatico
 
@@ -32,6 +35,9 @@ Entregas:
 - Guia passo a passo para aluno.
 - Guia para instrutor.
 - Checklist de auditoria rapida para contratos com funcoes administrativas.
+
+Status atual:
+- Em andamento.
 
 ## Proximo laboratorio
 
