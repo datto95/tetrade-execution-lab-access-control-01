@@ -37,7 +37,7 @@ Entregas:
 - Checklist de auditoria rapida para contratos com funcoes administrativas.
 
 Status atual:
-- Em andamento.
+- Concluida.
 
 ## Proximo laboratorio
 
